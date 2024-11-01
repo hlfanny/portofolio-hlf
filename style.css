@@ -1,0 +1,342 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "plus jakarta sans", sans-serif;
+    color: white;
+    background-color: black;
+}
+
+p {
+    font-size: 1rem; /* 16px */
+    line-height: 1.4rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+/*LANDING*/
+#landing {
+    text-align: center;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.grid-title {
+    display: flex;
+    justify-content: center; /* Center the titles */
+    gap: 0; /* No gap between titles */
+    margin-top: 150px; /* Space above the titles */
+}
+
+.grid-landing {
+    display: flex;
+    justify-content: center;
+    flex-direction: center; /* Stack the paragraphs vertically */
+    gap: 100px;
+    margin-bottom: 100px; /* Space below the grid */
+}
+
+.title-one h1,
+.title-two h1 {
+    font-size: 48pt; /* Font size for titles */
+    margin: 0; /* Remove default margin */
+}
+
+.title-two h1 {
+    font-style: italic; /* Italic style for the second title */
+}
+
+/*END OF LANDING*/
+
+.main-container {
+    width: 1100px;
+    margin: 0 auto;
+}
+
+/* Button */
+.btn {
+    padding: 1rem 1.5rem;
+    color: white;
+    background: black;
+    border-radius: 5px; /* rounded corners */
+    border-color: white;
+    cursor: pointer;
+}
+
+/* title */
+.pre-title {
+    letter-spacing: 0.5rem;
+    color: white;
+    position: relative;
+    padding-left: 0px;
+    width: fit-content;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.pre-title::before{
+    content: "";
+    width: 20px;
+    height: 1px;
+    position: absolute;
+    left: 0;
+    top: 50%;
+}
+
+/* logo dan navbar menu */
+.nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+    transition: 0.2s ease-in-out;
+}
+
+.nav ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    font-weight: 700px;
+    font-size: 1rem;
+    margin-left: 1.5rem;
+}
+
+.logo a{
+    color: white;
+}
+
+nav ul li a{
+    color: white;
+}
+
+/* home section */
+#home{
+    height: 700px;
+    display: grid;
+    grid-template-columns: 1fr 0.6fr;
+    align-items: center;
+}
+
+.home-name  {
+    font-size: 36px;
+    font-weight: 500px;
+    margin: 0.5rem 0.1rem;
+    color: white;
+}
+
+.home-right img{
+    width: 350px;
+    border-radius: 100px;
+}
+
+.home-right{
+    display: flex;
+    justify-content: right;
+}
+
+.home-left{
+    display: grid;
+    margin-left: 50px;
+    justify-content: center;
+}
+section{
+    padding-right: 5px;
+    padding-bottom: 5rem;
+}
+
+/* about section */
+#about{
+    justify-content: center;
+    margin: 0 auto;
+    padding: 60px 0;
+}
+
+.section-title-about{
+    text-align: center;
+    padding: 8px;
+}
+
+/* layout */
+.grid-3{
+    display: flex;
+    grid-template-columns: repeat(auto-fit, minmax(3, 1fr));
+    gap: 15px;
+}
+.grid-3 img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.about{
+    padding: 1rem 1.5rem;
+    text-align: justify;
+    color: white;
+    background: black;
+    border-radius: 5px; /* rounded corners */
+    border-color: white;
+    cursor: pointer;
+}
+
+.about h4{
+    font-size: 24px;
+}
+
+.about-icon img{
+    max-width: 350px;
+    display: flex;
+    max-height: 150px;
+    border-radius: 5px;
+}
+/* end of about*/
+
+/* EXPERIENCE & SKILLS*/
+#skills{
+    padding: 10px 0;
+    margin: 0 auto;
+}
+
+.section-title-skills {
+    text-align: center;
+    padding: 30px;
+}
+
+.experience-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px,1fr));
+    gap: 30px;
+}
+
+.experience{
+    display: flex;
+    gap: 20px;
+}
+
+.experience line{
+    padding: 0 20px;
+}
+
+.experience .line div {
+    width: 2px;
+    height: 100%;
+    background: white;
+    position: relative;
+
+}
+
+.experience-info{
+    margin: 4px 0;
+}
+
+.experience-date{
+    margin-bottom: 30px;
+}
+
+.experience .line div::before{
+    content: "";
+    width: 15px;
+    height: 15px;
+    background: white;
+    border-radius: 5px;
+    position: absolute;
+    left: -6px;
+}
+
+.skills-list{
+    list-style: none;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-top: 30px;
+}
+
+.skills-right{
+    line-height: 20px;
+    padding: 4px;
+}
+
+.skills-right ul li{
+    padding-left: 4px;
+    list-style: none;
+}
+
+.tecnical-skills {
+    font-size: 18px;
+    font-style: oblique;
+    padding: 7px;
+}
+/* END OF EXPERIENCE & SKILLS */
+
+/* CONTACT */
+#contact{
+    padding: 6rem;
+}
+
+.contact-title{
+    padding: 8px;
+}
+.contact-form div{
+    margin-bottom: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 10px 10px;
+    font-family: "Plus Jakarta Sans", "san-serif";
+    border-color: white;
+    border-radius: 5px;
+    background: black
+}
+
+.contact-form input::placeholder,
+.contact-form textarea ::placeholder{
+    color: white;
+}
+
+.contact-form input :focus,
+.contact-form textarea :focus {
+    outline: none;
+    border: 1px solid white;
+}
+
+.btn-submit{
+    width: 100%;
+    padding: 1rem 1.5rem;
+    color: white;
+    background: black;
+    border-radius: 5px; /* rounded corners */
+    border-color: white;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+}
+
+.btn-submit:hover{
+    color: black;
+    background-color: white;
+}
+/* END OF CONTACT */
+
+/* FOOTER */
+#footer {
+    margin: 10px;
+    text-align: center;
+}
+.footer-icon{
+    margin-bottom: 10px;
+}
+.footer-icon a{
+    margin: 0 8px;
+}
+.footer-icon a:hover{
+    fill: white;
+}
+
